@@ -20,6 +20,17 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+.clearfix{
+    zoom:1
+}
+
+.clearfix:after{
+    content:'.';
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 /*------------------------------------*/
 /* Reusable Components */
 /*------------------------------------*/
@@ -29,17 +40,69 @@ html{
     margin: 0 auto;
 }
 
+section{
+    padding:80px 0;
+}
+
+.box{
+    padding:1%;
+}
 
 /* --------- Heading ---------- */
-h1{
-    margin-top:0;
-    margin-bottom:20px;
-    color:#fff;
-    font-size:2.4rem;
+h1, 
+h2,
+h3{
     font-weight:300;
     text-transform: uppercase;
     letter-spacing:1px;
+}
+
+h1{
+    margin-bottom:20px;
+    color:#fff;
+    font-size:2.4rem;
     word-spacing: 4px;
+}
+
+h2{
+    font-size:1.8rem;
+    word-spacing:2px;
+    margin-bottom:30px;
+    text-align: center;
+}
+
+h2:after{
+    display: block;
+    height:2px;
+    width:100px;
+    background-color: #e67e22;
+    content: " ";
+    margin: 30px auto 0;
+}
+
+h3{
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* --------- Paragraph ---------- */
+.long-copy{
+    line-height: 145%;
+    width:70%;
+    margin-left:15%;
+}
+
+.box p{
+    font-size: 0.8rem;
+    line-height: 145%;
+}
+
+/* --------- Icons ---------- */
+.icon-big{
+    font-size: 3em;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
 }
 
 
@@ -141,3 +204,147 @@ header{
     border-bottom: 2px solid #e67e22;
 }
 
+
+/*------------------------------------*/
+/* Features */
+/*------------------------------------*/
+
+.feature .long-copy{
+    margin-bottom: 30px;
+}
+
+/*------------------------------------*/
+/* Meals */
+/*------------------------------------*/
+
+.meal{
+    padding:0;
+}
+.meal-showcase{
+    list-style: none;
+    width:100%;
+}
+
+.meal-showcase li{
+    display: block;
+    float:left;
+    width:25%;
+}
+
+.meal-figure{
+    width:100%;
+    margin:0;
+    overflow: hidden;
+}
+
+.meal-figure img{
+    width:100%;
+    height:auto;
+    filter:brightness(0.6);
+    -webkit-filter: brightness(0.6);
+    transform: scale(1.15);
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.meal-figure img:hover{
+    transform: scale(1.03);
+    filter:brightness(1);
+    -webkit-filter: brightness(1);
+}
+
+/*------------------------------------*/
+/* How it works */
+/*------------------------------------*/
+.steps{
+    background-color: rgb(243, 243, 243);
+}
+
+.steps-box{
+    margin-top:30px;
+}
+
+.steps-box:first-child{
+    text-align:right;
+    padding-right:3%;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width:40%;
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.works-step div{
+    color:#e67e22;
+    border:2px solid #e67e22;
+    display: block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align:center;
+    padding:7px;
+    float: left;
+    font-size:1.5rem;
+    margin-right:25px;
+}
+
+.btn-app img{
+    height: 50px;
+    width:auto;
+    margin-right:10px;
+}
+
+/*------------------------------------*/
+/* Cities */
+/*------------------------------------*/
+
+.city img{
+    width:100%;
+    height:auto;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    line-height: 150%;
+}
+
+.city-feature ion-icon{
+    display: inline-block;
+    width:30px;
+    text-align: center;
+    color:#e67e22;
+    margin-right: 10px;
+    line-height: 150%;
+    vertical-align: middle;
+}
+
+.city-feature span{
+    font-size:1rem;
+    line-height: 150%;
+}
+
+.tweeter:link,
+.tweenter:visited{
+    color:#e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.tweeter:hover,
+.tweeter:active{
+    color:#555;
+    border-bottom: 1px solid transparent;
+}
