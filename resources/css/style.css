@@ -108,7 +108,8 @@ h3{
 
 /* --------- Button ---------- */
 .btn:link, 
-.btn:visited{
+.btn:visited,
+button{
     display:inline-block;
     padding:0.5em 1.5em;
     font-weight: 300;
@@ -118,7 +119,8 @@ h3{
     }
 
 .btn-full:link, 
-.btn-full:visited{
+.btn-full:visited,
+button{
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color:#fff;
@@ -126,13 +128,15 @@ h3{
 }
 
 .btn-ghost:link, 
-.btn-ghost:hover{
+.btn-ghost:visited{
     border: 1px solid #e67e22;
     color: #e67e22;
 }
 
 .btn:hover,
-.btn:active{
+.btn:active,
+button:hover,
+button:active{
     background-color: #bf6516;
 }
 
@@ -157,6 +161,7 @@ header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/hero.jpg");
     background-size:cover;
     background-size:center;
+    background-attachment: fixed;
     height: 100vh;
     position: relative;
 }
@@ -335,7 +340,7 @@ header{
 }
 
 .tweeter:link,
-.tweenter:visited{
+.tweeter:visited{
     color:#e67e22;
     text-decoration: none;
     padding-bottom: 1px;
@@ -347,4 +352,248 @@ header{
 .tweeter:active{
     color:#555;
     border-bottom: 1px solid transparent;
+}
+
+/*------------------------------------*/
+/* Testimonial */
+/*------------------------------------*/
+
+.testimonial{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url("img/back-customers.jpg");
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top:40px;
+    font-size: 0.9em;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size:4rem;
+    display: block;
+    position: absolute;
+    top:-5px;
+    left:-5px;
+}
+
+cite{
+    font-size:0.8rem;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*------------------------------------*/
+/* Sign Up */
+/*------------------------------------*/
+
+.plan{
+    background-color: rgb(243, 243, 243);
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width:90%;
+    margin-left:5%;
+    box-shadow: 0 2px 2px rgb(214, 214, 214);
+}
+
+.plan-box div{
+    padding:15px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border-bottom: none;
+}
+
+.plan-price{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color:#e67e22;
+}
+
+.plan-price span{
+    font-size:1rem;
+    font-weight: 300;
+}
+
+.plan-price-meal{
+    font-size:0.8rem ;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding:5px 0;
+}
+
+.plan-box ion-icon{
+    display: inline-block;
+    width:15px;
+    text-align: center;
+    color:#e67e22;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/*------------------------------------*/
+/* Form */
+/*------------------------------------*/
+
+.form{
+    padding-bottom: 60px;
+}
+
+.contact-form{
+    width:60%;
+    margin: 0 auto;
+}
+
+.contact-form label{
+    display: inline-block;
+    padding-top:10px;
+    vertical-align: middle;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    /* margin-top:-5px; */
+    width:100%;
+    padding:7px;
+    border-radius:3px;
+    border: 1px solid #ccc;
+    color:#555;
+    font-weight: 300;
+}
+
+textarea{
+    height:100px;
+}
+
+input[type="checkbox"]{
+    margin:10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:rgb(153, 153, 153);
+    font-weight: 300;
+}
+
+select{
+    font-weight: 300;
+    color:#555;
+}
+
+/*------------------------------------*/
+/* Footer */
+/*------------------------------------*/
+
+footer{
+    background-color: #333;
+    padding:40px;
+}
+
+.footer-nav{
+    list-style: none;
+    float:left;
+}
+
+.social-link{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-link li{
+    display:inline-block;
+    margin-right:20px;
+}
+
+.footer-nav li:first-child{
+    margin-left:40px;
+}
+
+.social-link li:last-child{
+    margin-right: 100px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-link li a:link,
+.social-link li a:visited{
+    text-decoration: none;
+    font-size:0.85rem;
+    border:none;
+    color:#888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color:#ddd;
+}
+
+.social-link li a:link,
+.social-link li a:visited{
+    font-size:1.2rem;
+}
+
+.social-link li ion-icon:hover,
+.social-link li ion-icon:active{
+    transition:color 0.2s;
+}
+
+.social-link li ion-icon[name="logo-facebook"]:hover,
+.social-link li ion-icon[name="logo-facebook"]:active{
+    color:#3b5998;
+}
+
+.social-link li ion-icon[name="logo-twitter"]:hover,
+.social-link li ion-icon[name="logo-twitter"]:active{
+    color:#55acee;
+}
+
+.social-link li ion-icon[name="logo-instagram"]:hover,
+.social-link li ion-icon[name="logo-instagram"]:active{
+    color:#8a3ab9;
+}
+
+footer p{
+    color:#888;
+    text-align:center;
+    font-size:0.65rem;
+    margin-top:15px;
 }
