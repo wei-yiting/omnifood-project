@@ -75,15 +75,26 @@
     }
 
     .row,
-    .header-text-box{ padding: 0 2%}
+    .header-text-box{ padding: 0 2%;}
 
-    .mobile-nav-icon{display: inline-block;}
-    .main-nav{
-        float: left;
-        margin-top:30px;
-        margin-left:30px;
-        display: none;
+    .header-text-box{ margin-top:7vh;}
+    .header-text-box h1{ margin-bottom:10vh;}
+
+    nav{ position: relative;}
+    .logo{
+        position: absolute;
+        top:-5px;
+        left:10px;
     }
+    
+    .mobile-nav-icon{ display: inline-block;}
+    .main-nav{
+        margin-top:30px;
+        margin-left:5px;
+        display: none;
+        float: left;
+    }
+
     .main-nav li{
         display: block;
     }
@@ -94,6 +105,8 @@
         padding:10px 0;
         font-size: 1rem;
     }
+
+    .sticky .logo-black{ height: 7vh;}
     .sticky .main-nav{ margin-top:10px; }
     .sticky .main-nav li a:link,
     .sticky .main-nav li a:visited{
@@ -139,8 +152,8 @@
     .city .box{ text-align: center; }
 
     blockquote{
-        width: 70%;
-        margin-left:15%;
+        width: 85%;
+        margin-left:7.5%;
         font-size: 0.9rem;
     }
 

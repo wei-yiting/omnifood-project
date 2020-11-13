@@ -70,6 +70,7 @@ $(document).ready(function() {
         var nav = $('.js--main-nav');
 
         nav.slideToggle(200);
+        $('.logo').slideToggle(200);
 
         var menuBtn = $('.js--mobile-nav-icon ion-icon');
         if( menuBtn.attr("name") === "menu-outline"){

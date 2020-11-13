@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omnifood si a premium food delivery service with the misson to bring affordable and healthy meals to as many people as possible.">
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="resources/css/style.css">
@@ -31,7 +32,6 @@
                     <li><a href="#plans">Sign up</a></li>
                 </ul>
                 <a class="mobile-nav-icon js--mobile-nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
-                <!-- <a class="mobile-nav-icon-exit"><ion-icon name="close-outline"></ion-icon></ion-icon></a> -->
             </div>
         </nav>
         <div class="header-text-box">
@@ -312,11 +312,11 @@
     </section>
 
     <section class="form">
-        <div class="row">
+        <div class="row" id="form">
             <h2>We're happy to hear from you</h2>
         </div>
         <div class="row">
-            <form action="#" method="post" class="contact-form">
+            <form action="mailer.php" method="post" class="contact-form">
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label for="name">Name</label>
@@ -367,7 +367,7 @@
                         <label>&nbsp;</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <button>Send It!</button>
+                        <button type="submit">Send It!</button>
                     </div>
                    
                 </div>
