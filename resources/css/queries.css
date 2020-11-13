@@ -83,7 +83,7 @@
 
     .header-text-box h1{ 
         line-height: 1.45em;
-        margin-bottom:10vh; }
+        margin-bottom:6vh; }
     .header-text-box .btn{ margin-bottom:3vh;}
 
     nav{ position: relative; }
@@ -92,6 +92,8 @@
         top:-5px;
         left:10px;
         z-index:1;
+        height:12vh;
+        width:auto;
     }
     
     .mobile-nav-icon{ display: inline-block;}
