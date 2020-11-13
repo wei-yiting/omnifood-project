@@ -2,11 +2,12 @@ $(document).ready(function() {
 
     // For sticky navigation 
     $('.js--section-feature').waypoint(function(direction){
+        var menu =   $('.js--nav-menu');
 
         if(direction == "down"){
-            $('nav').addClass('sticky');
+            $('nav').addClass('sticky popOut-bg-none');
         }else{
-            $('nav').removeClass('sticky');
+            $('nav').removeClass('sticky popOut-bg-none');
         }
     },
     { offset: '60px;'
@@ -70,7 +71,11 @@ $(document).ready(function() {
         var nav = $('.js--main-nav');
 
         nav.slideToggle(200);
-        $('.logo').slideToggle(200);
+      
+        var menu =   $('.js--nav-menu');
+
+        menu.toggleClass("popOut");
+        
 
         var menuBtn = $('.js--mobile-nav-icon ion-icon');
         if( menuBtn.attr("name") === "menu-outline"){
