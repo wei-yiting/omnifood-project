@@ -250,7 +250,7 @@ header{
 .mobile-nav-icon,
 .mobile-nav-icon-exit{
     float: right;
-    margin-top:30px;
+    margin-top:15px;
     cursor: pointer;
     display: none;
 }

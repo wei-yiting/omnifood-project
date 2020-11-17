@@ -94,6 +94,7 @@
         z-index:1;
         height:12vh;
         width:auto;
+        margin-top:20px;
     }
     
     .mobile-nav-icon{ display: inline-block;}
